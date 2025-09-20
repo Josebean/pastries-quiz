@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="container">
-            <div class="start-page" id="start-page">
+            <div class="start-page" id="start-page" style="display: none;">
 
                 
                 <img src="croissant.png" style="width: 250px;">
@@ -22,8 +22,29 @@
                 <div class="question" id="question"></div>
                 <div class="choices" id="choices"></div>
             </div>
-            <div class="result-page" id="result-page" style="display: none;">
-                <h1>DONE!</h1>
+            <div class="result-page" id="result-page" style="display: flex;">
+                <div class="result-header">
+                    <h1>You got:</h1>
+                    <h1>CROISSANT!</h1>
+                </div>
+                <div class="result-overview">
+                    <img class="result-image" id="result-image" src="croissant(150).png">
+                    <ul>
+                        <li class="list-overview">a</li>
+                        <li class="list-overview">b</li>
+                        <li class="list-overview">c</li>
+                    </ul>
+                </div>
+                <div class="result-strengths">
+
+                </div>
+                <div class="result-weaknesses">
+
+                </div>
+                <div class="result-compatability">
+
+                </div>
+                
             </div>
         </div>
     <script src="main.js"></script>

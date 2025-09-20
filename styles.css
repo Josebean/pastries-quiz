@@ -73,3 +73,74 @@ button {
     flex-direction: column;
     gap: 1rem;
 }
+
+.result-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.result-overview {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    
+
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin-left: 16px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+    margin-right: 16px;
+}
+
+.list-overview {
+    padding: 1rem;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--brown);
+    color: var(--brown);
+}
+
+li {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.result-strengths {
+    display: flex;
+    margin: 0px 16px;
+}
+
+
+table {
+    
+    flex-grow: 1;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 30px;
+    border: 2px solid var(--brown);
+    overflow: hidden;
+    
+
+}
+
+th {
+    
+    background: var(--brown);
+    border: 2px solid var(--brown);
+    
+}
+
+

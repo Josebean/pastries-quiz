@@ -90,7 +90,7 @@ function showResult() {
 
     document.getElementById('question-page').style.display = "none";
     document.getElementById('result-page').style.display = "flex";
-    console.log(resultTypes[result]);
+    console.log(resultTypes[resultffff]);
 }
 
 function handleChoice(type, type2, type3, id) {
