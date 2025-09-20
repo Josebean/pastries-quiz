@@ -56,8 +56,41 @@ function showChoices(choices) {
 }
 
 function showResult() {
+    let result = '';
+    let firstLetter = [];
+    if (score.A >= score.B && score.A >= score.C) firstLetter.push('A');
+    if (score.B >= score.A && score.B >= score.C) firstLetter.push('B');
+    if (score.C >= score.A && score.C >= score.B) firstLetter.push('C');
+    result += firstLetter[0];
+
+    let secondLetter = [];
+    if (score.D >= score.E) secondLetter.push('D');
+    if (score.E >= score.D) secondLetter.push('E');
+    result += secondLetter[0];
+
+    let thirdLetter = [];
+    if (score.F >= score.G) thirdLetter.push('F');
+    if (score.G >= score.F) thirdLetter.push('G');
+    result += thirdLetter[0];
+
+    const resultTypes = {
+        'ADF': 'Egg Custard Tart',
+        'ADG': 'Pineapple Bun',
+        'AEF': 'Swiss Roll Cake',
+        'AEG': 'Coconut Cream Bun',
+        'BDF': 'Sponge Cake',
+        'BDG': 'Almond Cookie',
+        'BEF': 'Croissant',
+        'BEG': 'Cheesecake',
+        'CDF': 'Tiramisu',
+        'CDG': 'Rainbow Cookie',
+        'CEF': 'Chocolate Chip Cookie',
+        'CEG': 'Cream Puff'
+    }
+
     document.getElementById('question-page').style.display = "none";
     document.getElementById('result-page').style.display = "flex";
+    console.log(resultTypes[result]);
 }
 
 function handleChoice(type, type2, type3, id) {
