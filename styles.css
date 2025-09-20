@@ -37,7 +37,7 @@ button {
 }
 
 .container {
-    display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
