@@ -5,7 +5,7 @@
 
 body {
     background-color: var(--cream);
-    height: 100vh;
+    min-height: calc(100vh - 75px);
     display: flex;
     flex-direction: column;
     align-items: center;
