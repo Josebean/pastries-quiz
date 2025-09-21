@@ -78,6 +78,14 @@ button {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 1rem;
+}
+
+.result-header {
+    display: flex;
+    flex-direction: row;
+    margin: 16px 16px;
+    gap: 1rem
 }
 
 .result-overview {
@@ -98,11 +106,22 @@ img {
 ul {
     list-style-type: none;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
     flex-grow: 1;
     margin-right: 16px;
+    gap: 1rem;
 }
+
+.list-column {
+    
+    flex-direction: column;
+    
+    
+}
+
+.list-row {
+    flex-direction: row;
+}
+
 
 .list-overview {
     padding: 1rem;
@@ -112,6 +131,9 @@ ul {
     border-color: var(--brown);
     color: var(--brown);
 }
+
+
+
 
 li {
     text-align: center;
@@ -123,6 +145,15 @@ li {
     margin: 0px 16px;
 }
 
+.result-weaknesses {
+    display: flex;
+    margin: 0px 16px;
+}
+
+.result-compatability {
+    display: flex;
+    margin: 0 16px;
+}
 
 table {
     
@@ -140,6 +171,9 @@ th {
     
     background: var(--brown);
     border: 2px solid var(--brown);
+    font-size: 1.5rem;
+    color: var(--cream);
+    padding: .5rem;
     
 }
 
